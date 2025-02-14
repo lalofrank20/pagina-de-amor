@@ -17,7 +17,7 @@ function crearCorazon() {
 
 // Generar corazones cada 500ms
 setInterval(crearCorazon, 500);
-// FECHA DE ANIVERSARIO (Ajusta la fecha según la tuya)
+// FECHA DE ANIVERSARIO (Ajusta la fecha según la tuya) 
 const fechaInicio = new Date("2023-07-25"); // Formato: "YYYY-MM-DD"
 
 // Función para calcular los días juntos
@@ -94,3 +94,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Cargar la primera canción al iniciar
     cargarCancion();
 });
+// ❤️ Botón de "Te Amo"
+function mostrarMensaje() {
+    document.getElementById("mensaje").style.display = "block";
+}
+function abrirCarta() {
+    const sobre = document.getElementById("sobre");
+    const carta = document.getElementById("carta");
+
+    sobre.style.display = "none"; // Oculta el sobre
+    carta.style.display = "block"; // Muestra la carta
+}
