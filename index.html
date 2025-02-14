@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Para Mi Amor 💕</h1>
-        <p>Un espacio especial para nuestros recuerdos</p>
+        <p>Un espacio para nuestros recuerdos</p>
     </header>
     <!-- 🎶 Reproductor de Música -->
     <section class="music-player">
@@ -24,24 +24,79 @@
             <button class="btn-next">⏭️ Siguiente</button>
         </div>
     </section>
+    <section class="contador">
+        <h2>Tiempo Juntos </h2>
+        <p>Hemos estado juntos por <span id="diasJuntos"></span> días. 💖</p>
+    </section>
+    
 
     <section class="gallery">
         <h2>Nuestros Momentos</h2>
         <div class="grid">
             <img src="imagenes/1.jpg" alt="Momento 1">
             <img src="imagenes/3.jpg" alt="Momento 2">
-            <img src="imagenes/5.jpg" alt="Momento 3">
-            <img src="imagenes/4.jpg" alt="Momento 4">
+            <img src="imagenes/6.jpg" alt="Momento 3">
+            <img src="imagenes/8.jpg" alt="Momento 4">
         </div>
     </section>
+    <section class="timeline">
+        <h2>Nuestra Historia en Videos 📽️</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-content left">
+                    <h3>Primer zing ❤️ 🎬</h3>
+                    <video controls>
+                        <source src="imagenes/video3.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-content right">
+                    <h3>Primer mua</h3>
+                    <video controls>
+                        <source src="imagenes/video2.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-content left">
+                    <h3> Recuerdo Bonito ✨</h3>
+                    <video controls>
+                        <source src="imagenes/video4.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 💌 Carta de Amor Interactiva -->
+    <section class="love-letter" onclick="abrirCarta()">
+        <div class="envelope" id="sobre">
+            <div class="flap"></div>
+            <div class="body"></div>
+            <div class="shadow"></div>
+            <p class="click-text">Haz clic para abrir 💌</p>
+        </div>
+        <div class="letter" id="carta">
+            <p>Mi amor,</p>
+            <p>Sé que a veces te molesto demasiado, que tal vez te estreso más de lo que debería, y que mi manera de ser puede hacerte enojar. No siempre sé cómo expresarlo, pero quiero que sepas que en cada risa que te saco, en cada momento que pasamos juntos, y en cada pequeño detalle, siempre hay amor.</p>
+            <p>Eres la persona que ilumina mis días, la que me hace querer ser mejor, la que con una mirada puede cambiarlo todo. A pesar de mis travesuras, mis bromas y mis locuras, te amo con todo mi corazón.</p>
+            <p>Gracias por aguantarme, por quererme tal como soy, y por ser mi persona favorita en este mundo. Prometo seguir haciendo lo posible para verte feliz, para seguir construyendo momentos juntos, y para recordarte siempre lo importante que eres para mí.</p>
+            <p class="signature">Te amo muchísimo, mi amor. 💖</p>
+        </div>
+    </section>
+    
 
     <footer>
         <p>Hecho con 💖 por Frank para su amor</p>
-        <section class="contador">
-            <h2>Tiempo Juntos </h2>
-            <p>Hemos estado juntos por <span id="diasJuntos"></span> días. 💖</p>
+        <section class="te-amo">
+            <button onclick="mostrarMensaje()">💖 TE AMO 💖</button>
+            <p id="mensaje" style="display: none;">¡Eres lo mejor que me ha pasado! 💕</p>
         </section>
-        
     </footer>    
         <!-- 📜 Enlace al script -->
         <script src="script.js"></script>
